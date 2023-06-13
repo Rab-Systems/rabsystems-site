@@ -1,0 +1,173 @@
+@import '~animate.css/animate.min.css';
+
+:root {
+    --white: #FFFAFF;
+    --black: #000501;
+    --blue: #03C7FE;
+    --blue-low: #00acdb;
+    --purple: #870CCF;
+    --purple-low: #730baf;
+    --gray: #3B413C;
+    --gray-high: #DDDDDF;
+    --red: #FF220C;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--white);
+}
+
+.__bar-is-vertical {
+    background: var(--purple) !important;
+}
+
+h1, h2, h3, h4 {
+    color: var(--black);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+input, textarea {
+    border: 1px solid var(--gray-high) !important;
+    border-radius: 5px !important;
+    width: 100% !important;
+    
+}
+
+input:not(#tel-input), textarea {
+    padding: .5rem 1rem !important;
+}
+
+#tel-input {
+    height: 42px !important;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid var(--purple);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.rabsystems-input {
+    width: 100% !important;
+}
+
+.response {
+    width: 100%;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.error {
+    color: var(--red);
+}
+
+@media (max-width: 659px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+    
+    h4 {
+        font-size: .9rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+}
+
+.btn-clear-primary {
+    border: 1px solid var(--purple);
+    color: var(--purple);
+}
+
+    .btn-clear-primary:hover {
+        background-color: var(--purple);
+        color: var(--white);
+    }
+
+    .btn-clear-primary:active {
+        background-color: var(--purple) !important;
+        color: var(--white) !important;
+        outline: 2px solid var(--purple) !important;
+    }
+
+.btn-primary {
+    background-image: linear-gradient(to right, var(--blue), var(--purple));
+    border: none;
+    padding: .6rem 1rem;
+    font-weight: 600;
+    color: var(--white) !important;
+}
+
+    .btn-primary:hover {
+        background-image: linear-gradient(to right, var(--blue-low), var(--purple-low));
+    }
+
+    .btn-primary:active {
+        outline: 2px solid var(--purple-low);
+    }
+
+/* ESTILOS GLOBO HOME */
+
+.globe-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+@media (max-width: 998px) {
+    .globe-container {
+        opacity: 0;
+    }
+}
+
+/* ESTILOS GLOBO HOME */
